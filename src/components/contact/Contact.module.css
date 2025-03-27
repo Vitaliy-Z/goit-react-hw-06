@@ -1,0 +1,19 @@
+.wrapper {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fafafa;
+  border: 1px solid #fafafa;
+  border-radius: 4px;
+}
+.description {
+  text-align: left;
+}
+.text:not(:last-child) {
+  margin-bottom: 5px;
+}
+.button {
+  color: black;
+  background-color: #fafafa;
+}
