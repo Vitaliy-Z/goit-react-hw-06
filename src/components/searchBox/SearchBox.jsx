@@ -1,7 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
-
+import { changeFilter } from "../../redux/filtersSlice";
 import styles from "./SearchBox.module.css";
-import { filterNameAction } from "../../redux/store";
 
 export default function SearchBox() {
   const filterValue = useSelector((state) => state.filters.name);
@@ -9,7 +8,7 @@ export default function SearchBox() {
 
   const handeleChange = (e) => {
     const value = e.target.value.trim();
-    value !== filterValue && dispatch(filterNameAction(value));
+    value !== filterValue && dispatch(changeFilter(value));
   };
 
   return (
